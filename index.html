@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plataforma para organizações do terceiro setor divulgarem projetos e receberem apoio.">
+    <title>Impacto Social</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header_content">
+
+            <a href="#" class="logo">Impacto Social</a>
+
+            <button class="menu_button" id="menu_button" aria-label="Abrir menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <nav class="navigation" id="navigation" aria-label="Navegação principal">
+                <a href="#inicio">Início</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Contato</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero" id="inicio">
+            <div class="container hero_content">
+
+                <div class="hero_text">
+                    <span class="badge">Transformando ideias em impacto</span>
+
+                    <h1>Conectando pessoas a projetos que fazem a diferença</h1>
+
+                    <p>
+                        Uma plataforma para organizações do terceiro setor
+                        divulgarem seus projetos, encontrarem voluntários
+                        e receberem apoio.
+                    </p>
+
+                    <div class="hero_buttons">
+                        <a href="#projetos" class="button button_primary">
+                            Conhecer projetos
+                        </a>
+
+                        <a href="#contato" class="button button_secondary">
+                            Quero participar
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero_card">
+                    <h2>Faça parte</h2>
+                    <p>
+                        Encontre oportunidades de voluntariado e contribua
+                        para iniciativas sociais.
+                    </p>
+                    <span class="highlight">Seu apoio gera impacto.</span>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="projects section" id="projetos">
+            <div class="container">
+
+                <div class="section_header">
+                    <span class="badge">Projetos</span>
+                    <h2>Projetos em destaque</h2>
+                    <p>
+                        Conheça algumas iniciativas que precisam de apoio.
+                    </p>
+                </div>
+
+                <div class="project_grid">
+
+                    <article class="project_card">
+                        <div class="project_image image_one"></div>
+
+                        <div class="project_content">
+                            <span class="tag">Educação</span>
+                            <h3>Educação para todos</h3>
+
+                            <p>
+                                Projeto que oferece apoio educacional para
+                                crianças e jovens.
+                            </p>
+
+                            <button class="button button_primary project_button">
+                                Saiba mais
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="project_card">
+                        <div class="project_image image_two"></div>
+
+                        <div class="project_content">
+                            <span class="tag">Meio ambiente</span>
+                            <h3>Comunidade sustentável</h3>
+
+                            <p>
+                                Ações voltadas para sustentabilidade e
+                                preservação ambiental.
+                            </p>
+
+                            <button class="button button_primary project_button">
+                                Saiba mais
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="project_card">
+                        <div class="project_image image_three"></div>
+
+                        <div class="project_content">
+                            <span class="tag">Social</span>
+                            <h3>Apoio à comunidade</h3>
+
+                            <p>
+                                Iniciativa que auxilia famílias em situação
+                                de vulnerabilidade.
+                            </p>
+
+                            <button class="button button_primary project_button">
+                                Saiba mais
+                            </button>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="sobre">
+            <div class="container about_content">
+
+                <div>
+                    <span class="badge">Sobre a plataforma</span>
+                    <h2>Tecnologia para gerar impacto social</h2>
+                </div>
+
+                <div>
+                    <p>
+                        A plataforma foi desenvolvida para facilitar a
+                        comunicação entre organizações do terceiro setor
+                        e pessoas interessadas em contribuir com projetos.
+                    </p>
+
+                    <p>
+                        O projeto busca oferecer uma experiência simples,
+                        acessível e responsiva para diferentes dispositivos.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contact section" id="contato">
+            <div class="container">
+
+                <div class="section_header">
+                    <span class="badge">Contato</span>
+                    <h2>Entre em contato</h2>
+                    <p>
+                        Preencha o formulário para saber mais sobre os projetos.
+                    </p>
+                </div>
+
+                <form class="contact_form" id="contact_form">
+
+                    <div class="form_group">
+                        <label for="name">Nome</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Digite seu nome"
+                            required
+                        >
+                    </div>
+
+                    <div class="form_group">
+                        <label for="email">E-mail</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Digite seu e-mail"
+                            required
+                        >
+                    </div>
+
+                    <div class="form_group">
+                        <label for="message">Mensagem</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="Digite sua mensagem"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="button button_primary">
+                        Enviar mensagem
+                    </button>
+
+                    <div
+                        class="form_message"
+                        id="form_message"
+                        role="status"
+                        aria-live="polite"
+                    ></div>
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer_content">
+            <p>© 2026 Impacto Social</p>
+            <p>Projeto acadêmico - Análise e Desenvolvimento de Sistemas</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
